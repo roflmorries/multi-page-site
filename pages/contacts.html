@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comments</title>
+    <style>
+      #header ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      #header ul {
+        display: flex;
+      }
+      #header ul li {
+        margin: 0 1rem;
+      }
+    </style>
+</head>
+
+<body>
+<header>
+  <div class="header" id="header">
+    <img src="/images/logo/wiki_logo.svg" alt="Логотип" width="100">
+    <ul>
+      <li><a href="../index.html">Главная</a></li>
+      <li><a href="../pages/articles.html">Статья</a></li>
+      <li><a href="../pages/contacts.html">Комментарии</a></li>
+      <li><a href="../pages/gallery.html">Картинки</a></li>
+    </ul>
+  </div>
+</header>
+
+<form>
+  <fieldset>
+    <legend>Введите свои данные</legend>
+
+    <div>
+      <label for="name">Имя:</label>
+      <input type="text" id="name" name="name">
+    </div>
+
+    <div>
+      <label for="email">Электронная почта:</label>
+      <input type="email" id="email" name="email">
+    </div>
+
+    <div>
+      <input type="radio" name="gender" value="male"> Мужчина
+      <input type="radio" name="gender" value="female"> Женщина
+    </div>
+  </fieldset>
+  <fieldset>
+    <label for="favorite">Выберете раздел который вам больше понравился:</label>
+    <select id="favorite" name="favorite">
+      <option value="first">Главная</option>
+      <option value="second">Статья</option>
+      <option value="third">Комментарии</option>
+      <option value="fourth">Картинки</option>
+    </select>
+  </fieldset>
+
+  <fieldset>
+    <legend>Оставьте отзыв о статье</legend>
+
+    <div>
+      <label for="message">Комментарий:</label>
+      <textarea id="message" name="message" rows="4" cols="50">
+  </textarea>
+    </div>
+  </fieldset>
+
+  <input type="submit" value="Отправить">
+</form>
+</body>
+</html>
