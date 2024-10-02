@@ -3,18 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Multi-page site</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <style>
-      header ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-      header ul {
-        display: flex;
-      }
-      header ul li {
-        margin: 0 1rem;
-      }
+
     </style>
 </head>
 
@@ -22,7 +13,7 @@
 
 <header>
   <div class="header" id="header">
-    <img src="images/logo/wiki_logo.svg" alt="Логотип" width="100">
+      <img src="images/logo/wiki_logo.svg" alt="Логотип" width="50">
     <ul>
       <li><a href="index.html">Главная</a></li>
       <li><a href="pages/articles.html">Статья</a></li>
@@ -32,26 +23,24 @@
   </div>
 </header>
 
-  <fieldset>
-    <div class="main-block">
-      <h1> Добро пожаловать в упрощенную версию <u>Википедии</u></h1>
-      <p>
-        Созданную для закрепления информации с урока
-      </p>
-    </div>
-  </fieldset>
+  <div class="main-block">
+    <h1> Добро пожаловать в упрощенную версию <u>Википедии</u></h1>
+    <p>
+      Созданную для закрепления информации с урока
+    </p>
+  </div>
 
-  <fieldset>
+  <div class="main-content">
     <div class="picture-of-the-day">
       <h2>Изображение дня</h2>
-      <img src="images/index/Metellina_mengei.jpg" alt="Изображение дня" width="500">
+      <img src="images/index/Metellina_mengei.jpg" class="day-picture" alt="Изображение дня" width="450">
       <p>
         Паук <strong>Metellina mengei</strong> [англ.] (лат. Metellina mengei) из семейства <em>пауков-тетрагнатид</em>
       </p>
     </div>
-  </fieldset>
 
-  <fieldset>
+
+
     <div class="at-this-day">
       <h2>В этот день</h2>
       <p>27 сентября</p>
@@ -66,6 +55,7 @@
         <li>1997 год:&nbsp;— последний сеанс связи с аппаратом Mars Pathfinder, находившимся на поверхности Марса.</li>
       </ul>
     </div>
-  </fieldset>
+
+</div>
 </body>
 </html>
