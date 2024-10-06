@@ -13,11 +13,9 @@
     display: inline-flex;
     padding: 20px;
 }
-
 body {
     background-color: black;
     color: white;
-
 }
 .main-block {
     background-color: grey;
